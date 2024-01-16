@@ -1,8 +1,18 @@
-{{define "main"}}
+{{ define "main" }}
 
-<div class="container mx-auto bg-white p-10 mt-10">
-    <h1 class="text-3xl mb-5 text-red-500">{{.Title}}</h1>
-    {{.Content}}
-</div>
+<h1 class="text-3xl font-bold accent-slate-900">Nice. It's looking good already.</h1>
+<ul>
+    {{ range (where .Site.RegularPages "Section" "blog") }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+            <div class="bg-slate-200 rounded-md p-6 mt-6 hover:bg-slate-300">
+                <p class="font-bold mb-2">{{ .Title }}</p>
+                <p>{{ .Description }}</p>
+            </div>
+        </a>
 
-{{end}}
+    </li>
+    {{ end }}
+</ul>
+
+{{ end }}
