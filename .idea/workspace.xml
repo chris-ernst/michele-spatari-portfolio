@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Blog post fixes">
-      <change afterPath="$PROJECT_DIR$/layouts/blog/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/project/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/project/single.html" afterDir="false" />
+    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Added Projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/blog/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/blog/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/project/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/project/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/dist/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/output.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +47,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,7 +73,7 @@
       <updated>1705436541138</updated>
       <workItem from="1705436542150" duration="2808000" />
       <workItem from="1705440288908" duration="2597000" />
-      <workItem from="1705442908172" duration="9824000" />
+      <workItem from="1705442908172" duration="15340000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -114,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705600920551</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Projects">
+      <option name="closed" value="true" />
+      <created>1705603029559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705603029559</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +134,7 @@
     <MESSAGE value="Changes to config" />
     <MESSAGE value="Added blog posts" />
     <MESSAGE value="Blog post fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Blog post fixes" />
+    <MESSAGE value="Added Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Projects" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 ---
-title: "Hugo & Tailwind Dynamic Duo"
+title: "Michele Spatari"
 layout: home
 ---
 

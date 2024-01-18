@@ -6,9 +6,12 @@
     <li>
         <a href="{{ .RelPermalink }}">
             <div class="bg-slate-200 rounded-md p-6 mt-6 hover:bg-slate-300">
-                <p class="font-bold mb-2">{{ .Title }}</p>
-                <p class="">{{ .Date }}</p>
-                <p>{{ .Description }}</p>
+                <p class="font-bold mb-2 text-2xl">{{ .Title }}</p>
+                <p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+                <p>{{ .Params.teaser_description }}</p>
+                {{ if .Params.teaser_image }}
+                    <img src="{{ .Params.teaser_image }}" alt="{{ .Title }}" class="w-60 rounded-md mt-4" />
+                {{ end }}
             </div>
         </a>
 
