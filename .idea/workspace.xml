@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Added blog posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/blog/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/blog/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dist/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +46,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/layouts/blog" />
       <recent name="$PROJECT_DIR$/layouts/_default" />
       <recent name="$PROJECT_DIR$/layouts/defaults" />
       <recent name="$PROJECT_DIR$/layouts/sections" />
       <recent name="$PROJECT_DIR$/layouts/partials" />
-      <recent name="$PROJECT_DIR$/layouts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -64,7 +63,7 @@
       <updated>1705436541138</updated>
       <workItem from="1705436542150" duration="2808000" />
       <workItem from="1705440288908" duration="2597000" />
-      <workItem from="1705442908172" duration="4579000" />
+      <workItem from="1705442908172" duration="7718000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -90,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705446056887</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added blog posts">
+      <option name="closed" value="true" />
+      <created>1705447619761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705447619761</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
