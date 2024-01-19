@@ -22,15 +22,17 @@ collections:
     label: 'Project'
     folder: 'content/project'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{slug}}'
     editor:
       preview: true
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Teaser Description', name: 'teaser_description', widget: 'string' }
       - { label: "Teaser Image", name: "teaser_image", widget: "image", required: true }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: "Image", name: "image", widget: "image", required: true }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+

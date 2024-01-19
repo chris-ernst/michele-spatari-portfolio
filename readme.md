@@ -1,3 +1,48 @@
+
+
+# To Dos
+
+## Projects
+- [x] Project: Add location and year to front matter
+- [ ] Project: Add the ability to upload additional images
+- [ ] display these images in the project page and lightbox
+- [ ] Make Projects page editable
+ 
+## Stories
+- [ ] Clone Projects Page
+- [ ] Make Stories page editable
+
+
+## Portraits
+- [ ] Add lightbox to portrait/single.hmtl
+- [ ] Make portraits page editable
+
+## Video
+- [ ] Add the possibility to embed videos 
+- [ ] Make video page editable
+
+## About
+- [ ] Make About editable
+
+## Nav Bar
+- [ ] Add social modia icons to nav bar
+
+## Run Responsive Improvements
+- [ ] Test all pages on mobile
+- [ ] Delete 'blog'
+
+## Additional Improvements
+- [ ] Add a contact form
+- [ ] Add a footer?
+- [ ] Add a favicon
+
+
+
+
+
+
+# Hugo Decap CMS Starter
+
 ## Introduction
 
 This guide will walk you through how to integrate Decap CMS with Hugo. This is a good place to start if you want to learn from the ground up how these two tools work together. If you want to get up-and-running quicker, you can use one of the pre-existing and amazing [starter templates](/docs/start-with-a-template/)!
