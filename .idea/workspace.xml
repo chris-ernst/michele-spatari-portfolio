@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="CMS Bugfixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <updated>1705436541138</updated>
       <workItem from="1705436542150" duration="2808000" />
       <workItem from="1705440288908" duration="2597000" />
-      <workItem from="1705442908172" duration="27422000" />
+      <workItem from="1705442908172" duration="27603000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -176,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705659227027</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="CMS Bugfixes">
+      <option name="closed" value="true" />
+      <created>1705659434936</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705659434936</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
