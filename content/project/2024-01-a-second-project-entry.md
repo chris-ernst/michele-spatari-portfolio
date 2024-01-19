@@ -2,7 +2,7 @@
 title: A second project entry
 date: 2023-11-13T10:20:32.191Z
 location: Botswana
-ongoing: true
+ongoing: false
 teaser_description: A short teaser text
 teaser_image: /img/about-jumbotron.jpg
 description: "A longer description for the project "
