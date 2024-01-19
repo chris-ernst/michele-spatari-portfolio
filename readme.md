@@ -4,9 +4,9 @@
 
 ## Projects
 - [x] Project: Add location and year to front matter
-- [ ] Project: Add the ability to upload additional images
-- [ ] display these images in the project page and lightbox
-- [ ] Make Projects page editable
+- [x] Project: Add the ability to upload additional images
+- [x] display these images in the project page and lightbox
+- [x] Make Projects page editable
  
 ## Stories
 - [ ] Clone Projects Page

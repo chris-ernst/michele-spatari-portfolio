@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+
 <h1 class="text-3xl font-bold accent-slate-900">This is the project page. </h1>
 <ul>
     {{ range (where .Site.RegularPages "Section" "project") }}
@@ -7,7 +8,15 @@
         <a href="{{ .RelPermalink }}">
             <div class="bg-slate-200 rounded-md p-6 mt-6 hover:bg-slate-300">
                 <p class="font-bold mb-2 text-2xl">{{ .Title }}</p>
-                <p class="">{{ .Date.Format "2006" }}, {{ .Params.location}}</p>
+
+                {{ $isOngoing := .Params.ongoing }} <!-- Fetch the boolean value from the front matter -->
+                <p class="text-xs mb-2">
+                    {{ .Date.Format "January 2006" }}, {{ .Params.location}}
+                    {{ if $isOngoing }}
+                    <span class="bg-slate-500 py-1 px-2 rounded-md text-white">Ongoing</span>
+                    {{ end }}
+                </p>
+
                 <p>{{ .Params.teaser_description }}</p>
                 {{ if .Params.teaser_image }}
                     <img src="{{ .Params.teaser_image }}" alt="{{ .Title }}" class="w-60 rounded-md mt-4" />

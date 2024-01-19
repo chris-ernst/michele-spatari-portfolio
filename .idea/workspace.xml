@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Added Responsive Mobile Menu">
+    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Added date and location to projects">
+      <change afterPath="$PROJECT_DIR$/content/story/2024-01-18-a-first-project-entry.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/story/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/story/single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/SPM2023007C03021747-2500x2000.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/project/2024-01-18-a-first-project-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/project/2024-01-18-a-first-project-entry.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/project/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/project/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
@@ -42,7 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/layouts/project",
+    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/content/story",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,14 +60,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/story" />
+      <recent name="$PROJECT_DIR$/layouts/story" />
+      <recent name="$PROJECT_DIR$/layouts/stories" />
       <recent name="$PROJECT_DIR$/layouts/project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/layouts/blog" />
       <recent name="$PROJECT_DIR$/layouts/_default" />
       <recent name="$PROJECT_DIR$/layouts/defaults" />
       <recent name="$PROJECT_DIR$/layouts/sections" />
-      <recent name="$PROJECT_DIR$/layouts/partials" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +83,7 @@
       <updated>1705436541138</updated>
       <workItem from="1705436542150" duration="2808000" />
       <workItem from="1705440288908" duration="2597000" />
-      <workItem from="1705442908172" duration="19317000" />
+      <workItem from="1705442908172" duration="26523000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -132,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705609988085</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added date and location to projects">
+      <option name="closed" value="true" />
+      <created>1705651353490</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705651353490</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +162,7 @@
     <MESSAGE value="Blog post fixes" />
     <MESSAGE value="Added Projects" />
     <MESSAGE value="Added Responsive Mobile Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Responsive Mobile Menu" />
+    <MESSAGE value="Added date and location to projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added date and location to projects" />
   </component>
 </project>

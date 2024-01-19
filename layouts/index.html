@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-<h1 class="text-3xl font-bold accent-slate-900">Landing Page</h1>
-<a href="/blog" class="capitalize">Go to Blog</a>
+<h1 class="text-3xl font-bold accent-slate-900">{{ .Params.title }}</h1>
+<h2 class="text-xl font-medium accent-slate-900">{{ .Params.subtitle }}</h2>
+<img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md mt-12">
 
 {{ end }}
