@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="CMS Bugfixes">
+      <change afterPath="$PROJECT_DIR$/content/project/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/project/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/content/story",
+    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/content/project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +51,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/project" />
       <recent name="$PROJECT_DIR$/content/story" />
       <recent name="$PROJECT_DIR$/layouts/story" />
       <recent name="$PROJECT_DIR$/layouts/stories" />
@@ -69,7 +75,7 @@
       <updated>1705436541138</updated>
       <workItem from="1705436542150" duration="2808000" />
       <workItem from="1705440288908" duration="2597000" />
-      <workItem from="1705442908172" duration="27603000" />
+      <workItem from="1705442908172" duration="28412000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -183,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705659434936</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="CMS Bugfixes">
+      <option name="closed" value="true" />
+      <created>1705659623694</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705659623694</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -2,6 +2,10 @@
 
 # To Dos
 
+## General
+- [ ] Add CSS to CMS Preview
+- [ ] Enable Drafts 
+
 ## Projects
 - [x] Project: Add location and year to front matter
 - [x] Project: Add the ability to upload additional images
@@ -11,7 +15,6 @@
 ## Stories
 - [ ] Clone Projects Page
 - [ ] Make Stories page editable
-
 
 ## Portraits
 - [ ] Add lightbox to portrait/single.hmtl
