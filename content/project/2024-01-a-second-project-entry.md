@@ -5,7 +5,7 @@ location: Botswana
 ongoing: false
 teaser_description: A short teaser text
 teaser_image: /img/about-jumbotron.jpg
-description: "A longer description for the project "
+description: "A long body text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui enim, iaculis vitae felis et, mattis accumsan justo. Vestibulum ac egestas purus. In lectus eros, semper vel bibendum et, iaculis ut ligula. Phasellus eget condimentum nunc. "
 image: /img/about-jumbotron.jpg
 thumbnail_images:
   - image: /img/about-shade-grown.jpg

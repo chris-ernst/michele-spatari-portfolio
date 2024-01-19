@@ -1,16 +1,35 @@
 {{ define "main" }}
 
-<h1 class="text-3xl font-bold accent-slate-900">This is the story page. </h1>
+
+<h1 class="text-3xl font-bold accent-slate-900">{{ .Title }}</h1>
+<h2 class="text-xl font-medium accent-slate-900">{{ .Params.subtitle }}</h2>
+
+{{ if .Content }}
+    <p class="mt-6">{{ .Content }}</p>
+{{ end }}
+
+{{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md my-6 w-1/2">
+{{ end }}
+
 <ul>
     {{ range (where .Site.RegularPages "Section" "story") }}
     <li>
         <a href="{{ .RelPermalink }}">
             <div class="bg-slate-200 rounded-md p-6 mt-6 hover:bg-slate-300">
                 <p class="font-bold mb-2 text-2xl">{{ .Title }}</p>
-                <p class="">{{ .Date.Format "2006" }}, {{ .Params.location}}</p>
+
+                {{ $isOngoing := .Params.ongoing }} <!-- Fetch the boolean value from the front matter -->
+                <p class="text-xs mb-2">
+                    {{ .Date.Format "January 2006" }}, {{ .Params.location}}
+                    {{ if $isOngoing }}
+                    <span class="bg-slate-500 py-1 px-2 rounded-md text-white">Ongoing</span>
+                    {{ end }}
+                </p>
+
                 <p>{{ .Params.teaser_description }}</p>
                 {{ if .Params.teaser_image }}
-                    <img src="{{ .Params.teaser_image }}" alt="{{ .Title }}" class="w-60 rounded-md mt-4" />
+                <img src="{{ .Params.teaser_image }}" alt="{{ .Title }}" class="w-60 rounded-md mt-4" />
                 {{ end }}
             </div>
         </a>

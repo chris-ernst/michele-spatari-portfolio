@@ -1,17 +1,55 @@
 {{ define "main" }}
 
-    <div>
-        <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
-<!--        <p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>-->
-        <p class="">{{ .Date.Format "2006" }}, {{ .Params.location}}</p>
-        {{ if .Params.image }}
-            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-md mt-4" />
+
+<div>
+    <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+    <!--        <p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>-->
+
+    {{ $isOngoing := .Params.ongoing }} <!-- Fetch the boolean value from the front matter -->
+
+    <p class="">
+        {{ .Date.Format "January 2006" }}, {{ .Params.location}}
+        {{ if $isOngoing }}
+        <span class="bg-slate-500 py-1 px-2 rounded-md text-white">Ongoing</span>
         {{ end }}
-        <p class="description text-lg my-2">{{ .Description }}</p>
-        <article class="content prose lg:prose-xl mx-auto">
-            {{ .Content }}
-        </article>
+    </p>
+
+    {{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-md mt-4" />
+    {{ end }}
+    <p class="description text-lg my-2">{{ .Description }}</p>
+
+    <article class="content prose lg:prose-xl mx-auto">
+        {{ .Content }}
+    </article>
+
+    {{ if .Params.thumbnail_images }}
+    <div class="grid grid-cols-4 gap-4 mt-4">
+        {{ range .Params.thumbnail_images }}
+        <a data-fancybox="gallery" href="{{ .image }}" data-caption="{{ .caption }}">
+            <img class="w-full h-auto rounded-md" src="{{ .image }}" alt="{{ .caption }}">
+        </a>
+        {{ end }}
     </div>
+    {{ end }}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    "slideShow",
+                    "thumbs",
+                    "zoom",
+                    "fullScreen",
+                    "close"
+                ],
+                loop: true,
+            });
+        });
+    </script>
+
+</div>
 
 {{ end }}
+
 

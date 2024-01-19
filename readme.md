@@ -5,6 +5,7 @@
 ## General
 - [ ] Add CSS to CMS Preview
 - [ ] Enable Drafts 
+- [ ] Sticky nav
 
 ## Projects
 - [x] Project: Add location and year to front matter
@@ -13,8 +14,9 @@
 - [x] Make Projects page editable
  
 ## Stories
-- [ ] Clone Projects Page
-- [ ] Make Stories page editable
+- [x] Clone Projects Page
+- [x] Make Stories page editable
+- [ ] Check against Original
 
 ## Portraits
 - [ ] Add lightbox to portrait/single.hmtl

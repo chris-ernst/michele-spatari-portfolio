@@ -15,8 +15,9 @@
         </p>
 
         {{ if .Params.image }}
-            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-md mt-4" />
+            <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="rounded-md mt-4" />
         {{ end }}
+
         <p class="description text-lg my-2">{{ .Description }}</p>
 
         <article class="content prose lg:prose-xl mx-auto">
