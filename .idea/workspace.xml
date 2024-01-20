@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Sticky Desktop Nav">
-      <change beforePath="$PROJECT_DIR$/content/project/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/projects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/story/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/project/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/single.html" afterDir="false" />
+    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Reworked Content folder">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/project/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/story/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/story/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +78,7 @@
       <workItem from="1705663230342" duration="31000" />
       <workItem from="1705663268628" duration="1084000" />
       <workItem from="1705664362868" duration="97000" />
-      <workItem from="1705764256084" duration="4215000" />
+      <workItem from="1705764256084" duration="4815000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -224,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705768885927</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Reworked Content folder">
+      <option name="closed" value="true" />
+      <created>1705769248494</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1705769248494</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +250,7 @@
     <MESSAGE value="CMS Bugfixes" />
     <MESSAGE value="Added Stories" />
     <MESSAGE value="Sticky Desktop Nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sticky Desktop Nav" />
+    <MESSAGE value="Reworked Content folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked Content folder" />
   </component>
 </project>
