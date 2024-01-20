@@ -16,6 +16,32 @@
 {{ end }}
 
 
-<p>HELLO</p>
+<ul>
+    {{ range (where .Site.RegularPages "Section" "portrait") }}
+
+        <div class="grid grid-cols-4 gap-4 mt-4">
+            <a data-fancybox="gallery" href="{{ .Params.image }}" data-caption="{{ .Params.title }}">
+                <img class="w-full h-auto rounded-md" src="{{ .Params.image }}" alt="{{ .Params.title }}">
+            </a>
+        </div>
+
+
+    {{ end }}
+</ul>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "slideShow",
+                "thumbs",
+                "zoom",
+                "fullScreen",
+                "close"
+            ],
+            loop: true,
+        });
+    });
+</script>
 
 {{ end }}

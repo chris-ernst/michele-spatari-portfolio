@@ -16,11 +16,11 @@
 ## Stories
 - [x] Clone Projects Page
 - [x] Make Stories page editable
-- [ ] Check against Original
+- [x] Check against Original
 
 ## Portraits
 - [ ] Add lightbox to portrait/single.hmtl
-- [ ] Make portraits page editable
+- [x] Make portraits page editable
 
 ## Video
 - [ ] Add the possibility to embed videos 

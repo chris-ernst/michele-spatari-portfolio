@@ -28,7 +28,7 @@ collections:
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Subtitle (Optional)', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: "Ongoing", name: "ongoing", widget: "boolean", default: false }
@@ -58,7 +58,7 @@ collections:
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Subtitle (Optional)', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Publication', name: 'publication', widget: 'string' }
@@ -89,11 +89,11 @@ collections:
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Subtitle (Optional)', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Location (Optional)', name: 'location', widget: 'string', required: false }
+      - { label: 'Location', name: 'location', widget: 'string', required: false }
       - { label: 'Description', name: 'description', widget: 'string', required: false  }
-      - { label: "Image (Optional)", name: "image", widget: "image", required: true }
+      - { label: "Image", name: "image", widget: "image", required: true }
 
 
   - name: 'pages'
