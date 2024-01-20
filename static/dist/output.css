@@ -548,6 +548,10 @@ video {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -639,6 +643,14 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -649,14 +661,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .grid-cols-4 {
@@ -826,6 +830,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:sticky {
+    position: sticky;
+  }
+
   .md\:col-span-10 {
     grid-column: span 10 / span 10;
   }
@@ -844,6 +852,10 @@ video {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:grid-cols-12 {

@@ -85,23 +85,23 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Body (Optional), name: body, widget: markdown }
-          - { label: Image (Optional), name: image, widget: image }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
       - file: 'content/project/_index.md'
         label: 'Projects Page'
         name: 'projects'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Body (Optional), name: body, widget: markdown }
-          - { label: Image (Optional), name: image, widget: image }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
       - file: 'content/story/_index.md'
         label: 'Stories Page'
         name: 'stories'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Body (Optional), name: body, widget: markdown }
-          - { label: Image (Optional), name: image, widget: image }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
 
 

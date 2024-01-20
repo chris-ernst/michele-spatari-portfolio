@@ -1,65 +1,65 @@
 <script src="//unpkg.com/alpinejs@2.x/dist/alpine.js" defer></script>
-
-<div x-data="{ open: false }" class="sticky top-0 z-50 md:h-full bg-slate-100 p-6 md:pt-10">
-    <!-- Sticky header -->
-    <div class="flex justify-between items-start">
-        <a href="/" class="block">
-            <h1 class="text-2xl font-bold">Michele Spatari</h1>
-        </a>
-        <!-- Hamburger menu, hidden on medium screens and up -->
-        <button @click="open = !open" class="text-2xl md:hidden">
-            <!-- Hamburger icon -->
-            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-            </svg>
-            <!-- Close icon -->
-            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-        </button>
-    </div>
-
-    <!-- Mobile Menu, hidden on medium screens and up -->
-    <div x-show.transition.opacity="open" class="md:hidden mt-4">
-        <div class="text-xs mb-4">
-            <p class="text-slate-500 mb-1">Currently in<span class="px-1 py-0.5 ms-1 rounded bg-slate-200">Ethiopia</span></p>
-            <p class="text-slate-500"><a href="mailto:michele.spatari@gmail.com">michele.spatari@gmail.com</a></p>
+<div class="relative md:h-full">
+    <div x-data="{ open: false }" class="md:sticky top-0 z-50 bg-slate-100 p-6 md:pt-10">
+        <!-- Sticky header -->
+        <div class="flex justify-between items-start">
+            <a href="/" class="block">
+                <h1 class="text-2xl font-bold">Michele Spatari</h1>
+            </a>
+            <!-- Hamburger menu, hidden on medium screens and up -->
+            <button @click="open = !open" class="text-2xl md:hidden">
+                <!-- Hamburger icon -->
+                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                </svg>
+                <!-- Close icon -->
+                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
         </div>
 
-        <nav>
-            <ul class="space-y-1">
-                <li><a href="/project" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Projects</a></li>
-                <li><a href="/story" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Stories</a></li>
-                <li><a href="/portrait" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Portraits</a></li>
-                <li><a href="/video" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Videos</a></li>
-                <li><a href="/about" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">About</a></li>
-                <li><a href="/tearsheet" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Tearsheets</a></li>
-                <li><a href="/blog" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Blog (Testing)</a></li>
-            </ul>
-        </nav>
-    </div>
+        <!-- Mobile Menu, hidden on medium screens and up -->
+        <div x-show.transition.opacity="open" class="md:hidden mt-4">
+            <div class="text-xs mb-4">
+                <p class="text-slate-500 mb-1">Currently in<span class="px-1 py-0.5 ms-1 rounded bg-slate-200">Ethiopia</span></p>
+                <p class="text-slate-500"><a href="mailto:michele.spatari@gmail.com">michele.spatari@gmail.com</a></p>
+            </div>
 
-    <!-- Desktop Menu, visible on medium screens and up -->
-    <div class="hidden md:block mt-4">
-        <div class="text-xs mb-4">
-            <p class="text-slate-500 mb-1">Currently in<span class="px-1 py-0.5 ms-1 rounded bg-slate-200">Ethiopia</span></p>
-            <p class="text-slate-500"><a href="#">Email Address</a></p>
+            <nav>
+                <ul class="space-y-1">
+                    <li><a href="/project" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Projects</a></li>
+                    <li><a href="/story" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Stories</a></li>
+                    <li><a href="/portrait" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Portraits</a></li>
+                    <li><a href="/video" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Videos</a></li>
+                    <li><a href="/about" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">About</a></li>
+                    <li><a href="/tearsheet" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Tearsheets</a></li>
+                    <li><a href="/blog" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Blog (Testing)</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <nav>
-            <ul class="space-y-1">
-                <li><a href="/project" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Projects</a></li>
-                <li><a href="/story" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Stories</a></li>
-                <li><a href="/portrait" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Portraits</a></li>
-                <li><a href="/video" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Videos</a></li>
-                <li><a href="/about" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">About</a></li>
-                <li><a href="/tearsheet" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Tearsheets</a></li>
-                <li><a href="/blog" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Blog (Testing)</a></li>
-            </ul>
-        </nav>
+        <!-- Desktop Menu, visible on medium screens and up -->
+        <div class="hidden md:block mt-4">
+            <div class="text-xs mb-4">
+                <p class="text-slate-500 mb-1">Currently in<span class="px-1 py-0.5 ms-1 rounded bg-slate-200">Ethiopia</span></p>
+                <p class="text-slate-500"><a href="#">Email Address</a></p>
+            </div>
+
+            <nav>
+                <ul class="space-y-1">
+                    <li><a href="/project" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Projects</a></li>
+                    <li><a href="/story" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Stories</a></li>
+                    <li><a href="/portrait" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Portraits</a></li>
+                    <li><a href="/video" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Videos</a></li>
+                    <li><a href="/about" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">About</a></li>
+                    <li><a href="/tearsheet" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Tearsheets</a></li>
+                    <li><a href="/blog" class="block p-2 -ms-2 rounded-md hover:bg-slate-300 hover:font-medium">Blog (Testing)</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>
-
 
 
 

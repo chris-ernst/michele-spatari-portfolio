@@ -5,7 +5,7 @@
 ## General
 - [ ] Add CSS to CMS Preview
 - [ ] Enable Drafts 
-- [ ] Sticky nav
+- [x] Sticky nav
 
 ## Projects
 - [x] Project: Add location and year to front matter
