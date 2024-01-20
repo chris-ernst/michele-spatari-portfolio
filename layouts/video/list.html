@@ -1,22 +1,33 @@
 {{ define "main" }}
 
-<h1 class="text-3xl font-bold accent-slate-900">This is the story page. </h1>
-<ul>
-    {{ range (where .Site.RegularPages "Section" "story") }}
-    <li>
-        <a href="{{ .RelPermalink }}">
-            <div class="bg-slate-200 rounded-md p-6 mt-6 hover:bg-slate-300">
-                <p class="font-bold mb-2 text-2xl">{{ .Title }}</p>
-                <p class="">{{ .Date.Format "2006" }}, {{ .Params.location}}</p>
-                <p>{{ .Params.teaser_description }}</p>
-                {{ if .Params.teaser_image }}
-                    <img src="{{ .Params.teaser_image }}" alt="{{ .Title }}" class="w-60 rounded-md mt-4" />
-                {{ end }}
-            </div>
-        </a>
+    {{ with .Site.GetPage "page" "videos"}}
 
-    </li>
+        <h1 class="text-3xl font-bold accent-slate-900 my-4">{{ .Title }}</h1>
+        <h2 class="text-xl font-medium accent-slate-900 my-2">{{ .Params.subtitle }}</h2>
+
+        {{ if .Content }}
+            <p class="mt-6">{{ .Content }}</p>
+        {{ end }}
+
+        {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md my-6 w-1/2">
+        {{ end }}
+
     {{ end }}
-</ul>
+
+
+    <div class="my-6 p-6 bg-slate-50 rounded-md">
+
+        {{ range (where .Site.RegularPages "Section" "video") }}
+            <h3 class="text-2xl mb-2 font-medium"> {{ .Title}}</h3>
+            <div class="rounded-md overflow-clip" style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/{{ .Params.vimeo_video_id }}?h=4bfc84d6c8&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        {{end}}
+
+    </div>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
 
 {{ end }}

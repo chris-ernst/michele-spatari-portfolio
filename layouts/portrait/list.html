@@ -1,47 +1,72 @@
 {{ define "main" }}
 
-{{ with .Site.GetPage "page" "portraits"}}
+    <style>
+        .f-carousel {
+            --f-button-next-pos: 0px;
+            --f-button-prev-pos: 00px;
 
-    <h1 class="text-3xl font-bold accent-slate-900">{{ .Title }}</h1>
-    <h2 class="text-xl font-medium accent-slate-900">{{ .Params.subtitle }}</h2>
+            --f-button-width: 32px;
+            --f-button-height: 64px;
 
-    {{ if .Content }}
-        <p class="mt-6">{{ .Content }}</p>
+            --f-button-svg-width: 16px;
+            --f-button-svg-height: 16px;
+            --f-button-svg-stroke-width: 2;
+
+            --f-button-color: white;
+            --f-button-hover-color: white;
+
+            --f-button-bg: rgba(0, 0, 0, 0.2);
+            --f-button-hover-bg: rgba(0, 0, 0, 0.7);
+            --f-button-active-bg: #000;
+        }
+
+    </style>
+
+    {{ with .Site.GetPage "page" "portraits"}}
+
+        <h1 class="text-3xl font-bold accent-slate-900 my-4">{{ .Title }}</h1>
+        <h2 class="text-xl font-medium accent-slate-900 my-2">{{ .Params.subtitle }}</h2>
+
+        {{ if .Content }}
+            <p class="mt-6">{{ .Content }}</p>
+        {{ end }}
+
+        {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md my-6 w-1/2">
+        {{ end }}
+
     {{ end }}
 
-    {{ if .Params.image }}
-        <img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md my-6 w-1/2">
-    {{ end }}
 
-{{ end }}
-
-
-<ul>
-    {{ range (where .Site.RegularPages "Section" "portrait") }}
-
-        <div class="grid grid-cols-4 gap-4 mt-4">
-            <a data-fancybox="gallery" href="{{ .Params.image }}" data-caption="{{ .Params.title }}">
-                <img class="w-full h-auto rounded-md" src="{{ .Params.image }}" alt="{{ .Params.title }}">
-            </a>
+    <div class="my-6 bg-slate-50 rounded-md">
+        <div class="f-carousel rounded-md overflow-clip" id="myCarousel">
+            {{ range (where .Site.RegularPages "Section" "portrait") }}
+                <div class="f-carousel__slide flex flex-col justify-center" data-thumb-src="{{ .Params.image }}">
+                    <img class="rounded-md w-full" data-lazy-src="{{ .Params.image }}" alt="{{ .Params.title }}">
+                    <p class="font-bold mt-4">{{ .Params.title }}</p>
+                    {{ if .Params.caption }}
+                        <p class="text-sm">{{ .Params.caption }}</p>
+                    {{ end }}
+                </div>
+            {{end}}
         </div>
+    </div>
+
+    <script>
+        const container = document.getElementById("myCarousel");
+        const options = {
+            infinite: true,
+            adaptiveHeight: true,
+            Dots: false,
+            Thumbs: {
+                type: "modern",
+            },
+        };
+
+        new Carousel(container, options, { Thumbs });
 
 
-    {{ end }}
-</ul>
+    </script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('[data-fancybox="gallery"]').fancybox({
-            buttons: [
-                "slideShow",
-                "thumbs",
-                "zoom",
-                "fullScreen",
-                "close"
-            ],
-            loop: true,
-        });
-    });
-</script>
 
 {{ end }}

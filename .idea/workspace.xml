@@ -5,12 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Added Portraits">
+      <change afterPath="$PROJECT_DIR$/content/pages/tearsheets.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/pages/videos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/tearsheet/2024-01-11f.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/tearsheet/2024-01-nyt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/video/2024-01-showreel-22.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/about/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/tearsheet/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/11F-tearsheet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/230306_NYTimes.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/pages/portraits.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/portraits.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/2024-01-16-a-second-blog-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/blog/2024-01-16-first-blog-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portrait/2024-01-roger.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/portrait/2024-01-roger.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/portrait/2024-01-salah.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/portrait/2024-01-salah.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/blog/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/blog/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/portrait/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/portrait/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/portrait/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/video/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/video/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/video/single.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/src/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/src/input.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,30 +58,31 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/layouts/portrait",
+    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/layouts/tearsheet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/layouts/portrait" />
+      <recent name="$PROJECT_DIR$/layouts/tearsheet" />
+      <recent name="$PROJECT_DIR$/content/tearsheet" />
       <recent name="$PROJECT_DIR$/content/pages" />
-      <recent name="$PROJECT_DIR$/content/story" />
       <recent name="$PROJECT_DIR$/layouts/video" />
-      <recent name="$PROJECT_DIR$/content/project" />
+      <recent name="$PROJECT_DIR$/content/portrait" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/pages" />
       <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="$PROJECT_DIR$/layouts/blog" />
-      <recent name="$PROJECT_DIR$/layouts/_default" />
-      <recent name="$PROJECT_DIR$/layouts/defaults" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/layouts" />
+      <recent name="$PROJECT_DIR$/content/pages" />
+      <recent name="$PROJECT_DIR$/content/video" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,7 +100,7 @@
       <workItem from="1705663230342" duration="31000" />
       <workItem from="1705663268628" duration="1084000" />
       <workItem from="1705664362868" duration="97000" />
-      <workItem from="1705764256084" duration="7716000" />
+      <workItem from="1705764256084" duration="17375000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -258,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705771924916</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added Portraits">
+      <option name="closed" value="true" />
+      <created>1705772734194</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1705772734194</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

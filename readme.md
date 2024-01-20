@@ -19,7 +19,7 @@
 - [x] Check against Original
 
 ## Portraits
-- [ ] Add lightbox to portrait/single.hmtl
+- [x] Add lightbox to portrait/single.hmtl
 - [x] Make portraits page editable
 
 ## Video

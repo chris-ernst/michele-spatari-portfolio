@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+    {{ with .Site.GetPage "page" "tearsheets"}}
+
+        <h1 class="text-3xl font-bold accent-slate-900 my-4">{{ .Title }}</h1>
+        <h2 class="text-xl font-medium accent-slate-900 my-2">{{ .Params.subtitle }}</h2>
+
+        {{ if .Content }}
+            <p class="mt-6">{{ .Content }}</p>
+        {{ end }}
+
+        {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md my-6 w-1/2">
+        {{ end }}
+
+    {{ end }}
+
+    <!--        Gallery-->
+    <div class="grid grid-cols-4 gap-4 mt-4">
+        {{ range (where .Site.RegularPages "Section" "tearsheet") }}
+            <a data-fancybox="gallery" href="{{ .Params.image }}" data-caption="{{ .Params.caption }}">
+                <img class="w-full h-auto rounded-md" src="{{ .Params.image }}" alt="{{ .Params.caption }}">
+            </a>
+        {{ end }}
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    "slideShow",
+                    "thumbs",
+                    "zoom",
+                    "fullScreen",
+                    "close"
+                ],
+                loop: true,
+            });
+        });
+    </script>
+
+{{ end }}

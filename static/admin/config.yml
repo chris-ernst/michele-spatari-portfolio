@@ -5,19 +5,6 @@ media_folder: static/img
 public_folder: /img
 collections:
 
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-
   - name: 'project'
     label: 'Project'
     folder: 'content/project'
@@ -89,12 +76,36 @@ collections:
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Location', name: 'location', widget: 'string', required: false }
-      - { label: 'Description', name: 'description', widget: 'string', required: false  }
       - { label: "Image", name: "image", widget: "image", required: true }
 
+  - name: 'tearsheet'
+    label: 'Tearsheet'
+    folder: 'content/tearsheet
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    editor:
+      preview: true
+      draft: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Caption', name: 'caption', widget: 'string', required: false }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: "Image", name: "image", widget: "image", required: true }
+
+  - name: 'video'
+    label: 'Video'
+    folder: 'content/video'
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    editor:
+      preview: true
+      draft: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Vimeo Video ID', name: 'vimeo_video_id', widget: 'string', required: false }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
 
   - name: 'pages'
     label: 'Pages'
@@ -131,15 +142,28 @@ collections:
           - { label: Subtitle, name: subtitle, widget: string }
           - { label: Body (Optional), name: body, widget: markdown, required: false }
           - { label: Image (Optional), name: image, widget: image, required: false }
-          - label: 'Portrait Images'
-            name: 'Portrait_images'
-            widget: 'list'
-            fields:
-              - label: 'Image'
-                name: 'image'
-                widget: image
-              - label: 'Caption'
-                name: 'caption'
-                widget: string
-
+      - file: 'content/pages/videos.md'
+        label: 'Videos Page'
+        name: 'videos'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
+      - file: 'content/pages/about.md'
+        label: 'About Page'
+        name: 'about'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
+      - file: 'content/pages/tearsheets.md'
+        label: 'Tearsheets Page'
+        name: 'tearsheets'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
 

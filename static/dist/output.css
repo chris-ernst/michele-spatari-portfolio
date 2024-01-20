@@ -544,24 +544,46 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .visible {
   visibility: visible;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: sticky;
 }
 
 .top-0 {
@@ -581,14 +603,14 @@ video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .my-4 {
@@ -596,9 +618,9 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-8 {
@@ -658,10 +680,6 @@ video {
   height: auto;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -686,8 +704,16 @@ video {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-start {
   align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -702,6 +728,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.overflow-clip {
+  overflow: clip;
 }
 
 .rounded {
@@ -730,6 +760,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -763,6 +798,10 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.align-top {
+  vertical-align: top;
 }
 
 .text-2xl {
@@ -873,10 +912,6 @@ video {
     height: 100%;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -889,3 +924,6 @@ video {
     padding-top: 2.5rem;
   }
 }
+
+
+

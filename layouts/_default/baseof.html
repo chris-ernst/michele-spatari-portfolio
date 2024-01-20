@@ -6,15 +6,24 @@
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <link rel="stylesheet" href="/dist/output.css">
 
-        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+        <!-- JQuery-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Fancybox-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+
+        <!-- Carousel-->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css" rel="stylesheet"/>
 
     </head>
 
     <body class="bg-slate-100">
 
-        <div class="grid grid-cols-8 md:grid-cols-12 md:h-full">
+        <div class="grid grid-cols-8 md:grid-cols-12 md:h-full align-top">
 
             <div class="col-span-8 md:col-span-2 relative">
                 {{partial "nav" .}}
