@@ -1,5 +1,4 @@
 
-
 # To Dos
 
 ## General
@@ -7,12 +6,27 @@
 - [ ] Enable Drafts 
 - [x] Sticky nav
 
+## Nav Bar
+- [ ] Add social media icons to nav bar
+
+## Run Responsive Improvements
+- [ ] Test all pages on mobile
+- [x] Delete 'blog'
+
+## Additional Improvements
+- [ ] Add a contact form
+- [ ] Add a footer?
+- [ ] Add a favicon
+
+
+
+# Done
 ## Projects
 - [x] Project: Add location and year to front matter
 - [x] Project: Add the ability to upload additional images
 - [x] display these images in the project page and lightbox
 - [x] Make Projects page editable
- 
+
 ## Stories
 - [x] Clone Projects Page
 - [x] Make Stories page editable
@@ -23,26 +37,14 @@
 - [x] Make portraits page editable
 
 ## Video
-- [ ] Add the possibility to embed videos 
-- [ ] Make video page editable
+- [x] Add the possibility to embed videos
+- [x] Make video page editable
 
 ## About
-- [ ] Make About editable
+- [x] Make About editable
 
-## Nav Bar
-- [ ] Add social modia icons to nav bar
-
-## Run Responsive Improvements
-- [ ] Test all pages on mobile
-- [ ] Delete 'blog'
-
-## Additional Improvements
-- [ ] Add a contact form
-- [ ] Add a footer?
-- [ ] Add a favicon
-
-
-
+## Tearsheets
+- [x] implement and make editable
 
 
 

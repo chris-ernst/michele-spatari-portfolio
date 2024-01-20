@@ -82,7 +82,7 @@ collections:
 
   - name: 'tearsheet'
     label: 'Tearsheet'
-    folder: 'content/tearsheet
+    folder: 'content/tearsheet'
     create: true
     slug: '{{year}}-{{month}}-{{slug}}'
     editor:
