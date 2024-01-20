@@ -79,6 +79,23 @@ collections:
             name: 'caption'
             widget: string
 
+  - name: 'portrait'
+    label: 'Portrait'
+    folder: 'content/portrait'
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    editor:
+      preview: true
+      draft: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle (Optional)', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Location (Optional)', name: 'location', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false  }
+      - { label: "Image (Optional)", name: "image", widget: "image", required: true }
+
+
   - name: 'pages'
     label: 'Pages'
     files:
