@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Added Stories">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Sticky Desktop Nav">
+      <change beforePath="$PROJECT_DIR$/content/project/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/projects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/story/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/pages/stories.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/project/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/dist/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/output.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +56,11 @@
       <recent name="$PROJECT_DIR$/layouts/stories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/pages" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/layouts/blog" />
       <recent name="$PROJECT_DIR$/layouts/_default" />
       <recent name="$PROJECT_DIR$/layouts/defaults" />
-      <recent name="$PROJECT_DIR$/layouts/sections" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,7 +78,7 @@
       <workItem from="1705663230342" duration="31000" />
       <workItem from="1705663268628" duration="1084000" />
       <workItem from="1705664362868" duration="97000" />
-      <workItem from="1705764256084" duration="3872000" />
+      <workItem from="1705764256084" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -218,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705664400908</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Sticky Desktop Nav">
+      <option name="closed" value="true" />
+      <created>1705768885927</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705768885927</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +241,7 @@
     <MESSAGE value="Added lightbox to 'project'" />
     <MESSAGE value="CMS Bugfixes" />
     <MESSAGE value="Added Stories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Stories" />
+    <MESSAGE value="Sticky Desktop Nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sticky Desktop Nav" />
   </component>
 </project>

@@ -2,6 +2,10 @@
 
 
     <div>
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="rounded-md mt-4" />
+        {{ end }}
+
         <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
 <!--        <p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>-->
 
@@ -14,9 +18,6 @@
             {{ end }}
         </p>
 
-        {{ if .Params.image }}
-            <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="rounded-md mt-4" />
-        {{ end }}
 
         <p class="description text-lg my-2">{{ .Description }}</p>
 
