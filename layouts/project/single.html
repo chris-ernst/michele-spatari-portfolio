@@ -1,30 +1,42 @@
 {{ define "main" }}
 
-
     <div>
+<!--        Header image-->
         {{ if .Params.image }}
-        <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="rounded-md mt-4" />
+            <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="rounded-md my-4" />
         {{ end }}
 
-        <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
-<!--        <p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>-->
+<!--        Header-->
+        <div class="my-6">
+            <h1 class="text-4xl font-bold my-2">{{ .Title }}</h1>
 
-        {{ $isOngoing := .Params.ongoing }} <!-- Fetch the boolean value from the front matter -->
-
-        <p class="">
-            {{ .Date.Format "January 2006" }}, {{ .Params.location}}
-            {{ if $isOngoing }}
-                <span class="bg-slate-500 py-1 px-2 rounded-md text-white">Ongoing</span>
+            {{ if .Params.subtitle}}
+                <h2 class="text-2xl medium my-2">{{ .Params.subtitle }}</h2>
             {{ end }}
-        </p>
 
 
-        <p class="description text-lg my-2">{{ .Description }}</p>
 
-        <article class="content prose lg:prose-xl mx-auto">
-            {{ .Content }}
-        </article>
+            <p class="">
+                {{ $isOngoing := .Params.ongoing }} <!-- Fetch the boolean value from the front matter -->
+                {{ if $isOngoing }}
+                <span class="bg-slate-500 py-1 px-2 rounded-md text-white">Ongoing</span>
+                {{ end }}
 
+                © Michele Spatari / {{ .Date.Format "2006" }}, {{ .Params.location}}
+                <!--<p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>-->
+            </p>
+        </div>
+
+<!--        Article-->
+        <div class="my-8">
+            <p class="description text-lg my-2 font-semibold">{{ .Description }}</p>
+
+            <article class="content prose lg:prose-xl mx-auto">
+                {{ .Content }}
+            </article>
+        </div>
+
+<!--        Gallery-->
         {{ if .Params.thumbnail_images }}
             <div class="grid grid-cols-4 gap-4 mt-4">
                 {{ range .Params.thumbnail_images }}

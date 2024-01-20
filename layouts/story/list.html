@@ -24,7 +24,7 @@
 
                 {{ $isOngoing := .Params.ongoing }} <!-- Fetch the boolean value from the front matter -->
                 <p class="text-xs mb-2">
-                    {{ .Date.Format "January 2006" }}, {{ .Params.location}}
+                    {{ .Date.Format "January 2006" }} | {{ .Params.location}} | {{ .Params.publication}}
                     {{ if $isOngoing }}
                     <span class="bg-slate-500 py-1 px-2 rounded-md text-white">Ongoing</span>
                     {{ end }}

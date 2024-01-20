@@ -1,5 +1,6 @@
 ---
 title: A second project entry
+subtitle: A subtitle (optional) 
 date: 2023-11-13T10:20:32.191Z
 location: Botswana
 ongoing: false

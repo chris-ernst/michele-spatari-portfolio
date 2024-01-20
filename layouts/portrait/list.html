@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ with .Site.GetPage "page" "portraits"}}
+
+    <h1 class="text-3xl font-bold accent-slate-900">{{ .Title }}</h1>
+    <h2 class="text-xl font-medium accent-slate-900">{{ .Params.subtitle }}</h2>
+
+    {{ if .Content }}
+        <p class="mt-6">{{ .Content }}</p>
+    {{ end }}
+
+    {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Params.title}}" class="rounded-md my-6 w-1/2">
+    {{ end }}
+
+{{ end }}
+
+
+<p>HELLO</p>
+
+{{ end }}

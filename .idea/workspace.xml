@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d70f05-16ad-418e-9902-29f36394dc46" name="Changes" comment="Reworked Content folder">
+      <change afterPath="$PROJECT_DIR$/content/pages/portraits.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/portrait/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/portrait/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/project/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/project/2024-01-a-second-project-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/project/2024-01-a-second-project-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/story/2024-01-18-a-first-project-entry.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/story/2024-01-18-a-first-project-entry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/project/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/project/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/story/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/story/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/story/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/story/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/dist/output.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,31 +36,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cernst/Documents/_Dev/michele-spatari-portfolio/content/story&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/cernst/Documents/_Dev/michele-spatari-portfolio/layouts/portrait",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/layouts/portrait" />
+      <recent name="$PROJECT_DIR$/content/pages" />
       <recent name="$PROJECT_DIR$/content/story" />
       <recent name="$PROJECT_DIR$/layouts/video" />
       <recent name="$PROJECT_DIR$/content/project" />
-      <recent name="$PROJECT_DIR$/layouts/story" />
-      <recent name="$PROJECT_DIR$/layouts/stories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/pages" />
@@ -78,7 +85,7 @@
       <workItem from="1705663230342" duration="31000" />
       <workItem from="1705663268628" duration="1084000" />
       <workItem from="1705664362868" duration="97000" />
-      <workItem from="1705764256084" duration="4815000" />
+      <workItem from="1705764256084" duration="6574000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme">
       <option name="closed" value="true" />
@@ -232,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705769248494</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Reworked Content folder">
+      <option name="closed" value="true" />
+      <created>1705769912470</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705769912470</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

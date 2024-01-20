@@ -28,6 +28,7 @@ collections:
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle (Optional)', name: 'subtitle', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: "Ongoing", name: "ongoing", widget: "boolean", default: false }
@@ -57,8 +58,10 @@ collections:
       draft: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle (Optional)', name: 'subtitle', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Publication', name: 'publication', widget: 'string' }
       - { label: "Ongoing", name: "ongoing", widget: "boolean", default: false }
       - { label: 'Teaser Description', name: 'teaser_description', widget: 'string' }
       - { label: "Teaser Image", name: "teaser_image", widget: "image", required: true }
@@ -103,5 +106,23 @@ collections:
           - { label: Subtitle, name: subtitle, widget: string }
           - { label: Body (Optional), name: body, widget: markdown, required: false }
           - { label: Image (Optional), name: image, widget: image, required: false }
+      - file: 'content/pages/portraits.md'
+        label: 'Portraits Page'
+        name: 'portraits'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: Body (Optional), name: body, widget: markdown, required: false }
+          - { label: Image (Optional), name: image, widget: image, required: false }
+          - label: 'Portrait Images'
+            name: 'Portrait_images'
+            widget: 'list'
+            fields:
+              - label: 'Image'
+                name: 'image'
+                widget: image
+              - label: 'Caption'
+                name: 'caption'
+                widget: string
 
 
