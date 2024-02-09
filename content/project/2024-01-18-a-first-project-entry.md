@@ -1,8 +1,8 @@
 ---
 title: Rising Water
 subtitle: Housing struggle, hope, despair in Italy’s public showers.
-date: 2024-02-07T12:29:13.869Z
-location: None
+date: 1901-02-07T13:29:00.000Z
+location: Italy
 ongoing: false
 teaser_description: © Michele Spatari / 2017 - 2019
 teaser_image: /img/02_spatarimichele_risingwater_it_turin.jpg
@@ -17,6 +17,8 @@ thumbnail_images:
       housing conditions. Since the beginning of the XX century, Public Baths in
       Turin played a key role in mitigating the systemic housing crisis,
       worsened in the past years due to the city’s economic downfall.
+  - image: /img/01_spatarimichele_risingwater_it_turin.jpg
+    caption: A
 ---
 Rising Water is a multimedia documentary project on the role of public showers in Turin’s housing struggle.
 
