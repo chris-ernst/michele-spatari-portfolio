@@ -4,7 +4,7 @@ subtitle: Ongoing
 date: 2024-02-08T12:04:29.346Z
 location: "© Michele Spatari / 2021 "
 ongoing: false
-teaser_description: NONE
+teaser_description: The description of the project
 teaser_image: /img/01_spm2021003n0211b03.jpg
 description: NONE
 image: /img/01_spm2021003n0211b03.jpg
