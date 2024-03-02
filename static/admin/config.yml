@@ -33,7 +33,6 @@ collections:
       - { label: “Images”,
           name: “images”,
           widget: “list”,
-          summary: “{{fields.image}}”,
           field:
             { label: “Image”, name: “image”, widget: “image” },
         }
