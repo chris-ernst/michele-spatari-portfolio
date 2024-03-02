@@ -1,3 +1,9 @@
+# Multiple Uploads?
+# Folders in the media library?
+# Load captions from image metadata?
+# PW protected pages
+# Debug about page
+
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
@@ -13,7 +19,7 @@ collections:
     editor:
       preview: true
       draft: true
-    fields:
+    fields: # optional video field
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -28,12 +34,10 @@ collections:
         name: 'thumbnail_images'
         widget: 'list'
         fields:
-          - label: 'Image'
-            name: 'image'
-            widget: image
-          - label: 'Caption'
-            name: 'caption'
-            widget: string
+          - label: Images
+            name: images
+            widget: list
+            fields: { label: Image, name: image, widget: image }
 
   - name: 'story'
     label: 'Story'
@@ -46,7 +50,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' } # Remove, text field for location & year is enough
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Publication', name: 'publication', widget: 'string' }
       - { label: "Ongoing", name: "ongoing", widget: "boolean", default: false }
