@@ -12,8 +12,6 @@ media_library:
   config:
     publicKey: 1f489156ae1f94c54b48
     multiple: true
-media_folder: static/img
-public_folder: /img
 collections:
 
   - name: 'project'
@@ -45,6 +43,11 @@ collections:
           - label: 'Caption'
             name: 'caption'
             widget: string
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: { label: Image, name: image, widget: image }
 
   - name: 'story'
     label: 'Story'
