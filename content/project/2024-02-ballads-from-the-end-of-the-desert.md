@@ -8,10 +8,7 @@ teaser_description: The description of the project
 teaser_image: /img/01_spm2021003n0211b03.jpg
 description: NONE
 image: /img/01_spm2021003n0211b03.jpg
-thumbnail_images:
-  - image:
-      - https://ucarecdn.com/4f84e3cb-207f-4fe2-bfab-bfed1e8fd618/
-    caption: A test caption
+thumbnail_images: []
 ---
 The Great Karoo, or land of thirst, is a semi-desert natural region in South Africa with no apparent clear boundaries. It formed an impenetrable barrier to the interior for the Europeans settlers, a frightening place of great heat, frosts, floods, and droughts: a “Place of Great Dryness”.
 
