@@ -1,50 +1,15 @@
-
 # To Dos
-
 ## General
 - [ ] Add CSS to CMS Preview
-- [ ] Enable Drafts 
-- [x] Sticky nav
-
+- [ ] Enable Drafts
 ## Nav Bar
 - [ ] Add social media icons to nav bar
-
 ## Run Responsive Improvements
 - [ ] Test all pages on mobile
-- [x] Delete 'blog'
-
 ## Additional Improvements
 - [ ] Add a contact form
 - [ ] Add a footer?
 - [ ] Add a favicon
-
-
-
-# Done
-## Projects
-- [x] Project: Add location and year to front matter
-- [x] Project: Add the ability to upload additional images
-- [x] display these images in the project page and lightbox
-- [x] Make Projects page editable
-
-## Stories
-- [x] Clone Projects Page
-- [x] Make Stories page editable
-- [x] Check against Original
-
-## Portraits
-- [x] Add lightbox to portrait/single.hmtl
-- [x] Make portraits page editable
-
-## Video
-- [x] Add the possibility to embed videos
-- [x] Make video page editable
-
-## About
-- [x] Make About editable
-
-## Tearsheets
-- [x] implement and make editable
 
 
 
