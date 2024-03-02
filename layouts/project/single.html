@@ -40,8 +40,21 @@
         {{ if .Params.thumbnail_images }}
             <div class="grid grid-cols-4 gap-4 mt-4">
                 {{ range .Params.thumbnail_images }}
-                    <a data-fancybox="gallery" href="{{ .image }}" data-caption="{{ .caption }}">
-                        <img class="w-full h-auto rounded-md" src="{{ .image }}" alt="{{ .caption }}">
+                    <a data-fancybox="gallery" href="{{ .Params.image }}" data-caption="{{ .caption }}">
+                        <img class="w-full h-auto rounded-md" src="{{ .Params.image }}"
+                             alt="{{ if .caption }}
+                                {{ .caption }}
+                             {{ else }}
+                                {{ with $image.Exif }}
+                                  Date: {{ .Date }}
+                                  Lat/Long: {{ .Lat }}/{{ .Long }}
+                                  Tags:
+                                  {{ range $k, $v := .Tags }}
+                                    TAG: {{ $k }}: {{ $v }}
+                                  {{ end }}
+                                {{ end }}
+                             {{ end }}"
+                             title="{{ .caption }}">
                     </a>
                 {{ end }}
             </div>
