@@ -9,6 +9,12 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: static/img
 public_folder: /img
+multiple_upload: true
+multiple_media_folders: true
+load_media_from_subdirectories: true
+show_metadata: true
+show_preview_links: true
+show_drafts: false
 collections:
 
   - name: 'project'
@@ -33,13 +39,10 @@ collections:
       - label: 'Thumbnail Images'
         name: 'thumbnail_images'
         widget: 'list'
-        fields:
+        field:
           - label: 'Image'
             name: 'image'
             widget: image
-          - label: 'Caption'
-            name: 'caption'
-            widget: string
 
   - name: 'story'
     label: 'Story'
