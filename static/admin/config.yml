@@ -39,10 +39,7 @@ collections:
       - label: 'Thumbnail Images'
         name: 'thumbnail_images'
         widget: 'list'
-        field:
-          - label: 'Image'
-            name: 'image'
-            widget: image
+        field: { label: 'Image', name: 'image', widget: image }
 
   - name: 'story'
     label: 'Story'
